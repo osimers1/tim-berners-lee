@@ -31,7 +31,7 @@ h2:first-of-type{
     text-align: center;
     color: rgb(105, 103, 103);
 }
-p:first-of-type{
+div.block1 > p:first-of-type{
     text-align: center;
     color: rgb(105, 103, 103);
     padding-left: 15%;
@@ -87,6 +87,44 @@ a > i{
     margin-left: auto;
     margin-right: auto;
 }
+
+div.block3{
+    margin-left: 30%;
+    margin-right: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-top: 30px;
+}
+
+div.block3 > img{
+    display: flex;
+    margin-left: 0%;
+    width: 120px;
+    height: 120px;
+}
+
+div.block3 > h2:first-child{
+    margin-bottom: 30px;
+}
+
+div.block3 > h2:not(:first-child){
+    position: relative;
+    top: -150px;
+    left: 200px;
+    color: rgb(105, 103, 103);
+}
+
+div.block3 > p{
+    position: relative;
+    max-width: 50%;
+    max-height: 50%;
+    top: -150px;
+    left: 200px;
+    color: rgb(105, 103, 103);
+}
+
 @font-face {
     font-family: "metal";
     src: url("assets/MetalMania-Regular.ttf") format("truetype");
